@@ -8,4 +8,7 @@ Also time and threading is used.
   
 This script will create an file called open_ports.txt in your current working directory and list all the open ports in there.  
   
-to launch: python multi_thread_port_scan.py
+to launch:  
+1) clone this repository: git clone https://github.com/TheSilentdog100/Multi_Thread_PortScaner.git  
+2) cd into directory: cd Multi_Thread_PortScaner  
+3) launch python script: python multi_thread_port_scan.py

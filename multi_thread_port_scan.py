@@ -4,7 +4,7 @@ import time
 
 start = time.perf_counter()
 
-THREAD_COUNT = int(input("Enter your desired thread Count\nrecommended 30\n"))
+THREAD_COUNT = int(input("Enter your desired thread Count\nrecommended (30-250) depending on your system\n"))
 IP_ADRESS = input("Enter target Ip adress\n")
 AVAILABLE_PORTS = []
 
