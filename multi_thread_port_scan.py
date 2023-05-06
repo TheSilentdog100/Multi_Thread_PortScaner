@@ -4,7 +4,7 @@ import time
 
 start = time.perf_counter()
 
-THREAD_COUNT = int(input("Enter you desired thread Count\nrecommended 30\n"))
+THREAD_COUNT = int(input("Enter your desired thread Count\nrecommended 30\n"))
 IP_ADRESS = input("Enter target Ip adress\n")
 AVAILABLE_PORTS = []
 
@@ -22,6 +22,7 @@ def checkPorts():
         port = AVAILABLE_PORTS.pop(0)
         progress = 65536-len(AVAILABLE_PORTS)
         progress = (progress/65536)*100
+        progress = round(progress,1)
         print(f'Progress: {progress} %' ,end="\r")
         with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s:
             s.settimeout(0.2)
